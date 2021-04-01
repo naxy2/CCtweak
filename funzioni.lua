@@ -1,5 +1,4 @@
 function muovi(movimento, scavo)
-<<<<<<< HEAD
     repeat 
         scavo()
     until movimento()
@@ -7,15 +6,7 @@ end
 function avanza() muovi(turtle.forward,turtle.dig) end
 function sali() muovi(turtle.up,turtle.digUp) end
 function scendi() muovi(turtle.down,turtle.digDown) end
-=======
-    do 
-        scavo()
-    until movimento()
-end
-function avanza(muovi(turtle.forward,turtle.dig) end
-function sali(muovi(turtle.up,turtle.digUp) end
-function scendi(muovi(turtle.down,turtle.digDown) end
->>>>>>> ff8d60540394cc5b4b20ed9948182117749ba660
+
 
 function scavaBox(larghezza, altezza, profondita)
     posizione = vecotr.new(0,0,0)
