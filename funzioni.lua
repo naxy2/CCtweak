@@ -1,4 +1,15 @@
+function muovi(movimento, scavo)
+    do 
+        scavo()
+    until movimento()
+end
+function avanza(muovi(turtle.forward,turtle.dig) end
+function sali(muovi(turtle.up,turtle.digUp) end
+function scendi(muovi(turtle.down,turtle.digDown) end
+
 function scavaBox(larghezza, altezza, profondita)
+    posizione = vecotr.new(0,0,0)
+
     for alt = 1,altezza do
         for larg = 1,larghezza do
             for prof = 1,profondita-1 do
@@ -46,8 +57,3 @@ function scavaBox(larghezza, altezza, profondita)
         turtle.up()
     end
 end
--- dispari dispari = in alto a destra
--- pari dispari = in basso a destra
--- dispari pari = in basso a sinistra
--- pari pari = in basso a sinistra
-scavaBox(4,2,3)
